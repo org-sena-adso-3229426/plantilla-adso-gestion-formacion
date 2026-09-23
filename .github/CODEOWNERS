@@ -1,0 +1,15 @@
+# ==========================================================
+# CODEOWNERS · Plantilla SENA (reemplaza <ORG> y pNN)
+# La última regla que coincide con la ruta es la que prevalece.
+# ==========================================================
+ 
+# 1. Regla general: el líder del proyecto o el instructor
+*                      @org-sena-adso-3229426/pNN-lider @org-sena-adso-3229426/instructores
+ 
+# 2. Código fuente y documentación
+/src/                  @org-sena-adso-3229426/pNN-lider @org-sena-adso-3229426/instructores
+/docs/                 @org-sena-adso-3229426/pNN-lider @org-sena-adso-3229426/instructores
+ 
+# 3. Configuración del flujo: SOLO el instructor
+/.github/              @org-sena-adso-3229426/instructores
+/docs/rubrica-evaluacion.md  @org-sena-adso-3229426/instructores
