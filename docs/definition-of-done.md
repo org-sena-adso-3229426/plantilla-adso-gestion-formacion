@@ -1,105 +1,37 @@
-# Definition of Done (DoD)
- 
-## Propósito
- 
-La **Definition of Done (DoD)** establece los criterios mínimos que deben cumplirse antes de considerar una historia de usuario, tarea o incremento del sprint como terminado.
- 
-Todos los integrantes del equipo deberán verificar el cumplimiento de estos criterios antes de solicitar la revisión de un Pull Request (PR).
- 
----
- 
-# Criterios de Aceptación de la Definition of Done
- 
-Para que una entrega sea considerada **Terminada (Done)**, debe cumplir con todos los siguientes puntos:
- 
-## ✅ 1. Código integrado en `develop`
- 
-- Los cambios fueron desarrollados en una rama de trabajo (`feature/*`, `bugfix/*`, etc.).
-- La integración se realiza mediante Pull Request.
-- El código queda correctamente incorporado en la rama `develop`.
-- No existen conflictos pendientes de fusión.
- 
----
- 
-## ✅ 2. Pull Request aprobado
- 
-- El Pull Request fue creado utilizando la plantilla definida por el proyecto.
-- El PR incluye descripción clara de los cambios realizados.
-- Se atendieron todos los comentarios de revisión.
-- El Pull Request recibió la aprobación del revisor o líder responsable.
- 
----
- 
-## ✅ 3. Criterios de aceptación verificados
- 
-- Todos los criterios de aceptación de la historia de usuario fueron validados.
-- La funcionalidad cumple los requisitos definidos.
-- No existen errores conocidos que impidan el uso correcto de la funcionalidad.
-- Los escenarios principales fueron comprobados.
- 
----
- 
-## ✅ 4. Pruebas ejecutadas
- 
-- Se realizaron las pruebas definidas para la historia.
-- Los resultados fueron satisfactorios.
-- No existen errores bloqueantes pendientes.
-- En caso de contar con pruebas automatizadas, estas se ejecutan correctamente.
- 
-### Evidencias sugeridas
- 
-- Capturas de pantalla.
-- Registros de ejecución.
-- Resultados de pruebas automatizadas.
-- Videos cortos de funcionamiento.
- 
----
- 
-## ✅ 5. Evidencia adjunta
- 
-El Pull Request debe incluir evidencias que demuestren el funcionamiento de la solución:
- 
-- Capturas de pantalla.
-- GIFs o videos.
-- Resultados de pruebas.
-- Evidencias de validación por parte del equipo.
- 
----
- 
-# Lista de Verificación
- 
-Antes de solicitar aprobación del Pull Request, verificar:
- 
-- [ ] El código está integrado en `develop`.
-- [ ] El Pull Request fue revisado y aprobado.
-- [ ] Los criterios de aceptación fueron verificados.
-- [ ] Las pruebas fueron ejecutadas exitosamente.
-- [ ] Las evidencias fueron adjuntadas al Pull Request.
- 
----
- 
-# Responsables
- 
-## Desarrollador
- 
-- Implementar la solución.
-- Ejecutar las pruebas.
-- Adjuntar evidencias.
-- Solicitar revisión.
- 
-## Revisor
- 
-- Validar la calidad del código.
-- Verificar criterios de aceptación.
-- Aprobar o solicitar cambios.
- 
-## Líder del Equipo
- 
-- Confirmar el cumplimiento de la Definition of Done.
-- Autorizar la integración final en `develop`.
- 
----
- 
-# Criterio Final
- 
-> Una historia de usuario se considera **Done** únicamente cuando todos los criterios de esta Definition of Done han sido cumplidos y verificados por el equipo.
+# Definition of Done (DoD) · Ficha 3229426
+ 
+Una historia de usuario SOLO se considera terminada ("Hecho") cuando cumple
+TODOS los puntos siguientes. El líder verifica estos puntos antes de aprobar
+el PR hacia `develop`; el instructor los vuelve a verificar antes de aprobar
+el PR hacia `main`.
+ 
+## 1. Código
+- [ ] El código está en una rama `feature/HU-XX-descripcion` creada desde `develop`.
+- [ ] No hay código comentado, `console.log`/`print` de depuración, ni archivos
+      temporales (.env, node_modules, __pycache__, etc.).
+- [ ] Los nombres de variables, funciones y archivos son descriptivos.
+ 
+## 2. Pull Request
+- [ ] El PR usa la plantilla completa (.github/PULL_REQUEST_TEMPLATE.md).
+- [ ] El PR está vinculado al Issue de la historia con "closes #N".
+- [ ] El PR fue aprobado por el revisor correspondiente (líder o instructor,
+      según el campo "Revisión" del tablero Kanban).
+- [ ] Todos los comentarios de revisión quedaron marcados como resueltos.
+ 
+## 3. Criterios de aceptación
+- [ ] Cada criterio de aceptación de la historia fue probado manualmente
+      y quedó marcado [x] en el PR.
+- [ ] Si existen pruebas automáticas (GitHub Actions), todas pasan en verde.
+ 
+## 4. Evidencia
+- [ ] El PR incluye al menos una captura de pantalla o registro de la
+      ejecución que demuestra el cumplimiento del criterio.
+ 
+## 5. Tablero
+- [ ] Al fusionar el PR, la tarjeta del Issue queda en la columna "Hecho"
+      del tablero Kanban del proyecto.
+ 
+> Si falta cualquier punto de esta lista, el revisor debe usar
+> "Request changes" en el Pull Request y explicar qué falta,
+> siguiendo el formato de retroalimentación de la guía de aprendizaje
+> (sección 8.11 del taller).

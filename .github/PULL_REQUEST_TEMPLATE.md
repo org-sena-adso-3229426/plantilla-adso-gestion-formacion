@@ -1,4 +1,3 @@
-<!-- .github/PULL_REQUEST_TEMPLATE.md -->
 ## 📑 Entrega de evidencia · SENA
 **Aprendiz:** @usuario   **Ficha:** 3229426   **Proyecto:** pNN
 **Competencia / RAP:** RAP-__  ·  **Sprint:** #__  ·  **Guía de aprendizaje:** GA-__
@@ -25,7 +24,7 @@ Como **[rol]** quiero **[acción]** para **[beneficio]**.  Issue: closes #__
 - [ ] Probé localmente sin errores
 - [ ] Sin código comentado ni archivos innecesarios (.env, node_modules)
 - [ ] Commits descriptivos (feat:, fix:, docs:)
-- [ ] Cumple la Definition of Done del equipo
+- [ ] Cumple la Definition of Done del equipo (ver docs/definition-of-done.md)
  
 ## 👥 Revisión del líder (Nivel 1) / instructor (Nivel 2)
-- [ ] Funciona · - [ ] Código legible · - [ ] Criterios cumplidos · - [ ] Comentarios resueltos
+- [ ] Funciona  - [ ] Código legible  - [ ] Criterios cumplidos  - [ ] Comentarios resueltos
