@@ -1,7 +1,7 @@
-<!-- .github/ISSUE_TEMPLATE/historia-usuario.md -->
 ---
 name: Historia de usuario
 about: Elemento del Product Backlog
+title: "HU-XX: "
 labels: historia
 ---
 **Como** [rol] **quiero** [acción] **para** [beneficio]
